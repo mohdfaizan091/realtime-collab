@@ -1,10 +1,10 @@
 const documents = new Map();
 
-function getDocument(docid) {
-    if (!documents.has(docId)) {
-      documents.set(docId, { id: docId, content: "" });
-    }
-    return documents.get(docId);
+function getDocument(docId) {
+  if (!documents.has(docId)) {
+    documents.set(docId, { id: docId, content: "" });
+  }
+  return documents.get(docId);
 }
 
 function updateDocument(docId, content) {
